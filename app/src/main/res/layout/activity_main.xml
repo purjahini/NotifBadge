@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".MainActivity">
+
+    <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_email"
+            android:id="@+id/icon"
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true"
+    />
+    <com.nex3z.notificationbadge.NotificationBadge
+            android:id="@+id/badge"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_toRightOf="@id/icon"
+            android:layout_alignTop="@id/icon"
+            android:layout_marginTop="-8dp"
+            android:layout_marginLeft="-16dp"
+            app:nbBackground="@drawable/badge_bg_with_shadow"
+
+    >
+
+    </com.nex3z.notificationbadge.NotificationBadge>
+
+    <Button
+            android:layout_marginTop="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnNotif1"
+            android:text="NOtif 1"
+            android:layout_below="@id/badge"
+
+    />
+    <Button
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnNotif99"
+            android:text="NOtif 99"
+            android:layout_below="@id/btnNotif1"
+
+
+    />
+    <Button
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnNotifClear"
+            android:text="NOtif Clear"
+            android:layout_below="@id/btnNotif99"
+
+    />
+
+
+</RelativeLayout>
